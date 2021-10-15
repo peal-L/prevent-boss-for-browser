@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momoyu</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+            font-size: 12px;
+            width: 250px;
+            /* height: 200px; */
+            padding: 10px;
+            overflow: hidden;
+            color: #222;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body * {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 24px;
+            margin-right: 6px;
+            vertical-align: text-top;
+        }
+
+        .title-text {
+            margin-right: auto;
+        }
+
+        .about {
+            color: #4EA1E1;
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .setting {
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .setting-item {
+            padding: 8px 0;
+        }
+
+        input {
+            width: calc(100% - 100px);
+            padding: 8px 12px;
+            border-radius: 6px;
+            background-color: #fff;
+            border: 1px solid #ececec;
+            outline: none;
+            color: inherit;
+            -webkit-appearance: none;
+        }
+
+        .input-tip {
+            background-color: #ffb5b5;
+            border-color: #ffb5b5;
+            animation: shake .3s;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                -webkit-transform: translateX(0);
+                -ms-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            25%,
+            75% {
+                -webkit-transform: translateX(-10px);
+                -ms-transform: translateX(-10px);
+                transform: translateX(-10px)
+            }
+
+            50% {
+                -webkit-transform: translateX(10px);
+                -ms-transform: translateX(10px);
+                transform: translateX(10px)
+            }
+        }
+
+        .setting-item>label {
+            display: inline-block;
+            width: 85px;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .switch {
+            height: 26px;
+            position: relative;
+            display: inline-block;
+            border-radius: 5px;
+            box-shadow: 0 0 0px 1px #ececec;
+            overflow: hidden;
+            cursor: pointer;
+            vertical-align: middle;
+            user-select: none;
+            font-size: 12px;
+        }
+
+        .switch-space>span {
+            display: inline-block;
+            padding: 5px 8px;
+        }
+
+        .switch-block {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            transform: translateX(0);
+        }
+
+        .switch-init {
+            transition: transform 0.3s;
+        }
+
+        .switch-block::before {
+            content: attr(on-text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -100%;
+            top: 0;
+            color: #fff;
+            background-color: #337ab7;
+        }
+
+        .switch-block::after {
+            content: attr(off-text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 100%;
+            top: 0;
+            color: #fff;
+            background-color: #bbb;
+        }
+
+        .switch-on>.switch-block {
+            transform: translateX(100%);
+        }
+
+        .error-tip {
+            display: none;
+            font-size: 12px;
+            color: #f56c6c;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="title">
+        <img class="logo" src="assets/icon.png" alt="">
+        <span class="title-text">搜索助手</span>
+        <span class="about">关于</span>
+    </p>
+    <div class="setting">
+        <div class="setting-item">
+            <label>搜索模式：</label>
+            <div class="switch-open switch">
+                <div class="switch-block" on-text="开启" off-text="关闭"></div>
+                <p class="switch-space">
+                    <span>开启</span>
+                    <span>关闭</span>
+                </p>
+            </div>
+        </div>
+        <p class="error-tip">开启失败，请刷新页面后重试</p>
+        <div class="setting-item" style="display: none;">
+            <label>虚拟页面：</label>
+            <input class="input-fake" type="text" placeholder="请输入完整的url">
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popup.js"></script>
+
+</html>

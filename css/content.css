@@ -1,0 +1,42 @@
+body {
+    /* opacity: 0; */
+}
+
+.fish-fake-iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border: 0;
+    outline: none;
+    z-index: -1;
+}
+
+.fish-body-fake-hide {
+    overflow: hidden;
+}
+
+.fish-body-fake-hide .fish-fake-iframe {
+    opacity: 1;
+    z-index: 9999;
+}
+
+.fish-body-side-tip {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px 0 0 6px;
+    color: #fff;
+    text-align: center;
+    background-color: #009241;
+    cursor: pointer;
+    z-index: 9998;
+}
+
+.fish-body-side-tip::after {
+    content: '退出搜索';
+}
