@@ -53,4 +53,4 @@
 
 如果喜欢大家也可以赞赏支持我做更多好玩有趣的东西哦~~
 
-![赞赏](https://common.peal.cc/img/reward-min.jpg)
+![赞赏](assets/reward.jpeg)
