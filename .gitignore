@@ -4,3 +4,5 @@ node_modules/
 .idea/
 .vscode/
 *.log
+*.zip
+prevent-boss-v2.0.zip
