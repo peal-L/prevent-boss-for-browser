@@ -51,6 +51,8 @@
 
 项目已开源到 [GitHub](https://github.com/peal-L/prevent-boss-for-browser)，也欢迎鱼友 [反馈插件的问题和建议](https://support.qq.com/products/331902)
 
+[隐私政策](PRIVACY.md)
+
 如果喜欢大家也可以赞赏支持我做更多好玩有趣的东西哦~~
 
 ![赞赏](assets/reward.jpeg)

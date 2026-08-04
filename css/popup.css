@@ -69,7 +69,15 @@ body * {
   line-height: 1.2;
 }
 
-.about {
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.about,
+.btn-reward {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.72);
   color: var(--text);
@@ -78,12 +86,86 @@ body * {
   padding: 6px 10px;
   border-radius: 999px;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
-.about:hover {
+.about:hover,
+.btn-reward:hover {
   background: #fff;
   border-color: #d5dbe5;
+}
+
+.btn-reward {
+  color: #c27803;
+  border-color: #f0d9a8;
+  background: #fff8eb;
+}
+
+.btn-reward:hover {
+  background: #fff3d9;
+  border-color: #e8c78a;
+}
+
+.reward-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(28, 31, 36, 0.42);
+}
+
+.reward-modal[hidden] {
+  display: none;
+}
+
+.reward-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  padding: 18px 16px 16px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(28, 31, 36, 0.18);
+  text-align: center;
+}
+
+.reward-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: 0;
+  background: transparent;
+  color: #9aa3af;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.reward-close:hover {
+  color: var(--text);
+}
+
+.reward-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.reward-qr {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f7f8fa;
+}
+
+.reward-desc {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .panel {

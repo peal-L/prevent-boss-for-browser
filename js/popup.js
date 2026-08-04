@@ -2,6 +2,9 @@ const $switch = document.querySelector('.switch-open');
 const $inputFake = document.querySelector('.input-fake');
 const $statusTip = document.querySelector('.status-tip');
 const $about = document.querySelector('.about');
+const $rewardBtn = document.querySelector('.btn-reward');
+const $rewardModal = document.getElementById('reward-modal');
+const $rewardClose = document.querySelector('.reward-close');
 
 function displayFakeUrl(stored) {
   return isBuiltinFake(stored) ? '' : stored;
@@ -16,6 +19,14 @@ function setSwitchUI(on) {
       : '开启后对所有网页标签生效';
     $statusTip.classList.toggle('status-on', on);
   }
+}
+
+function openRewardModal() {
+  $rewardModal.hidden = false;
+}
+
+function closeRewardModal() {
+  $rewardModal.hidden = true;
 }
 
 async function setGlobalMode(enabled, fakeUrl) {
@@ -69,6 +80,12 @@ async function init() {
 
   $about.addEventListener('click', () => {
     window.open('https://github.com/peal-L/prevent-boss-for-browser');
+  });
+
+  $rewardBtn.addEventListener('click', openRewardModal);
+  $rewardClose.addEventListener('click', closeRewardModal);
+  $rewardModal.addEventListener('click', (e) => {
+    if (e.target === $rewardModal) closeRewardModal();
   });
 }
 

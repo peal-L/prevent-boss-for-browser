@@ -17,7 +17,10 @@
         <div class="brand-desc">摸鱼防老板工具</div>
       </div>
     </div>
-    <button type="button" class="about">GitHub</button>
+    <div class="header-actions">
+      <button type="button" class="btn-reward" aria-label="赞赏">赞赏</button>
+      <button type="button" class="about">GitHub</button>
+    </div>
   </header>
 
   <section class="panel">
@@ -39,6 +42,15 @@
       <p class="field-hint">多数网站已禁止被嵌入（frame-ancestors），自定义地址经常会加载失败。不确定时请留空。</p>
     </div>
   </section>
+
+  <div class="reward-modal" id="reward-modal" hidden>
+    <div class="reward-dialog" role="dialog" aria-modal="true" aria-label="赞赏">
+      <button type="button" class="reward-close" aria-label="关闭">×</button>
+      <p class="reward-title">感谢支持</p>
+      <img class="reward-qr" src="assets/reward.jpeg" alt="赞赏码">
+      <p class="reward-desc">扫码请作者喝杯咖啡</p>
+    </div>
+  </div>
 
   <script src="js/fake-url.js"></script>
   <script src="js/popup.js"></script>
