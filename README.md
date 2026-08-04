@@ -1,4 +1,4 @@
-![](https://common.peal.cc/img/icon.png) 搜索助手 (摸鱼防老板工具) **V2.0**，一个摸鱼专用的浏览器插件，支持 Chromium 内核浏览器（Chrome / Edge 等）。
+![](assets/icon.png) 搜索助手 (摸鱼防老板工具) **V2.0**，一个摸鱼专用的浏览器插件，支持 Chromium 内核浏览器（Chrome / Edge 等）。
 
 > 目前安装方式：
 > - 1、[Edge 商店链接](https://microsoftedge.microsoft.com/addons/detail/%E6%90%9C%E7%B4%A2%E5%8A%A9%E6%89%8B-%E6%91%B8%E9%B1%BC%E9%98%B2%E8%80%81%E6%9D%BF%E5%B7%A5%E5%85%B7/ncjmakdkhifapgochfjcgdjpodleifkg)（商店可能仍是旧版）
@@ -36,9 +36,7 @@
 3. 鼠标移出窗口 / 失焦时显示伪装页；移回后继续摸鱼
 4. 虚拟页面建议**留空**，使用内置百度伪装页（多数网站已禁止被 iframe 嵌入）
 
-配合 [摸摸鱼热榜](https://momoyu.cc) 摸鱼更搭哦
-
-![使用方法](https://common.peal.cc/img/250fbb3cc52e0ee16b40b48d43851e0.gif)
+配合 [摸摸鱼热榜Pro](https://pro.momoyu.cc) 摸鱼更搭哦
 
 ### 退出方式
 
