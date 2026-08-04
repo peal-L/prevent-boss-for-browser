@@ -1,8 +1,8 @@
-![](https://common.peal.cc/img/icon.png)  搜索助手 (摸鱼防老板工具) V1.0，一个摸鱼专用的浏览器插件，支持谷歌内核的浏览器（谷歌和edge）。
+![](https://common.peal.cc/img/icon.png) 搜索助手 (摸鱼防老板工具) **V2.0**，一个摸鱼专用的浏览器插件，支持 Chromium 内核浏览器（Chrome / Edge 等）。
 
 > 目前安装方式：
-> - 1、[edge商店链接](https://microsoftedge.microsoft.com/addons/detail/%E6%90%9C%E7%B4%A2%E5%8A%A9%E6%89%8B-%E6%91%B8%E9%B1%BC%E9%98%B2%E8%80%81%E6%9D%BF%E5%B7%A5%E5%85%B7/ncjmakdkhifapgochfjcgdjpodleifkg)
-> - 2、谷歌内核浏览器可直接在[扩展页面](chrome://extensions/)（chrome://extensions/）**打开开发者模式**导入[项目文件夹](https://github.com/peal-L/prevent-boss-for-browser)到扩展
+> - 1、[Edge 商店链接](https://microsoftedge.microsoft.com/addons/detail/%E6%90%9C%E7%B4%A2%E5%8A%A9%E6%89%8B-%E6%91%B8%E9%B1%BC%E9%98%B2%E8%80%81%E6%9D%BF%E5%B7%A5%E5%85%B7/ncjmakdkhifapgochfjcgdjpodleifkg)（商店可能仍是旧版）
+> - 2、在扩展页打开**开发者模式**，加载本仓库文件夹：Chrome 打开 `chrome://extensions/`，Edge 打开 `edge://extensions/`
 
 ## 背景
 
@@ -29,21 +29,27 @@
 说干就干，摸鱼的时间学习了几天，然后就写出来了！
 
 
-## 使用方法
+## 使用方法（V2.0）
 
-和原来一样的简单，浏览器扩展搜索【搜索助手 (摸鱼工具)】，安装之后如动图所示操作。则可以实现了。
+1. 安装扩展后，点击工具栏图标打开弹窗
+2. 打开**全局模式**（对所有 http/https 标签生效）
+3. 鼠标移出窗口 / 失焦时显示伪装页；移回后继续摸鱼
+4. 虚拟页面建议**留空**，使用内置百度伪装页（多数网站已禁止被 iframe 嵌入）
+
 配合 [摸摸鱼热榜](https://momoyu.cc) 摸鱼更搭哦
 
 ![使用方法](https://common.peal.cc/img/250fbb3cc52e0ee16b40b48d43851e0.gif)
 
-开启摸鱼模式的页面只能通过页面上的【退出搜索】按钮才能退出。
+### 退出方式
 
+- 页面右上角【退出搜索】
+- 或再次关闭弹窗中的全局模式开关
 
 ## 愿景
 
 希望世界和平，摸鱼开心。
 
-项目已开源到 [Github](https://github.com/peal-L/prevent-boss-for-browser)，也欢迎鱼友 [反馈插件的问题和建议](https://support.qq.com/products/331902) 
+项目已开源到 [GitHub](https://github.com/peal-L/prevent-boss-for-browser)，也欢迎鱼友 [反馈插件的问题和建议](https://support.qq.com/products/331902)
 
 如果喜欢大家也可以赞赏支持我做更多好玩有趣的东西哦~~
 
